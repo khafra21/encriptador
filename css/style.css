@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(#0e1e2b, #19364c);
+    background-color: #0e1e2b;
+    /*background: linear-gradient(#0e1e2b, #19364c);*/
     font-size: 18px;
     font-family: 'Roboto';
     color: white;
