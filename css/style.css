@@ -1,0 +1,126 @@
+body{
+    background: linear-gradient(#0e1e2b, #19364c);
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    resize: none;
+    height: 400px;
+    color:white;
+    font-size: 18px;
+    font-family: 'Console', Courier, monospace;
+}
+
+button{
+    background-color: #2546cc;
+    border-radius: 50px;
+    border: 1px solid #2546cc;
+    color:white;
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    transition: .5s ease;
+    margin-right: 4px;
+}
+
+button:disabled, button:disabled:hover{
+    background-color: #5b849f;
+    border: 1px solid #5b849f;
+    color: #0e1e2b;
+    transform: none;
+}
+
+button:hover{
+    background-color: #fed100;
+    border: 1px solid #fed100;
+    color: #0e1e2b;
+    transform: scale(1.03);
+}
+
+header{
+    padding: 24px!important;
+}
+
+#layerTexto ::placeholder {
+    color: #fed100;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenedor{
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+}
+
+#layerTexto, #layerResultado{
+    background-color: #152b3b;
+    border-radius: 6px;
+    display: inline-block;
+    height: 450px;
+    vertical-align: top;
+    margin: 12px;
+    padding: 24px;
+}
+
+#layerTexto{
+    width: 45%;
+    padding: 24px;
+}
+
+#txtResult{
+    height: 340px;
+    margin-top: 12px;
+}
+
+#layerResultado{
+    width: 35%;
+}
+
+#txtEstado{
+    border-radius: 6px;
+    background-color: #2546cc;
+    color: white;
+    padding: 10px;
+}
+
+#piePagina{
+    margin-top: 12px;
+    color: #5b849f;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: center;
+}
+
+#piePagina ul{
+    margin: 0;
+    list-style: none;
+}
+
+#piePagina ul li{
+    display: inline-block;
+    width: 28px;
+}
+
+.maxSize{
+    max-height: 400px;
+}
+
+.animacion{
+    animation: baseCambio 1s linear alternate both;
+}
+
+.oculto{
+    display: none;
+}
+
+@keyframes baseCambio {
+    50% { background: #fed100; }
+    100% { background: #2546cc; }
+}

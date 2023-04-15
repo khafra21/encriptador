@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="contenedor">
+		<header>
+			<img src="img/logo.svg">
+		</header>
+	</div>
+
+	<main>
+
+		<div class="contenedor">
+			<div id="layerTexto">
+				<p><textarea id="txtBase" onchange="limpiarCadena(this)" placeholder="Ingresar Texto" autofocus required></textarea></p>
+				<p>
+					<button id="btnEncriptar">Encriptar</button> 
+					<button id="btnDesencriptar">Desencriptar</button>
+					<button id="btnLimpiar" disabled>Limpiar</button>
+				</p>
+			</div>
+	
+			<div id="layerResultado">
+				<p id="txtEstado">Ingresa el texto para encriptar o desencriptar</p>
+				<div id="resultadoText">
+					<div id="munieco">
+						<img src="img/munieco.svg" class="maxSize" width="100%">
+					</div>	
+					<p><textarea id="txtResult" class="oculto textareaResult" disabled></textarea></p>
+					<p><button id="btnCopiar" class="oculto" disabled>Copiar</button></p>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="contenedor">
+			<div id="piePagina">
+				&#169; Jonatan Matu, 2023
+				<ul>
+					<li>
+						<a href="https://github.com/khafra21"><img src="img/github.svg"></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/jonatan-matu-355387271/"><img src="img/linkedin.svg"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</main>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
